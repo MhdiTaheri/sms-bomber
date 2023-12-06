@@ -16,10 +16,10 @@ try:
                 
                 if response.status_code == 200:
                     print(f"OTP sent successfully via {url}.")
-                    # Process the response here if needed
+                    
                 
             except requests.exceptions.RequestException:
-                pass  # Ignore exceptions and continue with the next request
+                pass
 
 except KeyboardInterrupt:
-    print("\nGoodbye!")  # Display farewell message on keyboard interruption
+    print("\nGoodbye!")
