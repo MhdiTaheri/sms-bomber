@@ -11,7 +11,7 @@ apis = send_otp_requests(number)
 for _ in range(50):
     for url, payload in apis:
         try:
-            response = requests.post(url, data=payload, timeout=5)
+            response = requests.post(url, data=payload)
             
             if response.status_code == 200:
                 print(f"OTP sent successfully via {url}.")
